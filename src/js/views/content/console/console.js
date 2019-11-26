@@ -65,7 +65,7 @@ class Console {
     this.setHistory(command);
     console.log(command);
     try {
-      console.log(this.evaluateObjectReference(command));
+      console.log(eval(command));
     } catch (e) {
       console.error(e);
     }
